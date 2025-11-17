@@ -1,4 +1,4 @@
 package br.ufjf.dcc.ciberduelo.modelo;
 
-public class CartaAtaque {
+public class CartaAtaque implements Carta{
 }
