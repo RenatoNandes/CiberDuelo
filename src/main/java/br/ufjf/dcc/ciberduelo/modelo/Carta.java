@@ -4,7 +4,7 @@ public interface Carta {
 
     String getNome();
 
-    String getTipo(); // "ATAQUE", "DEFESA" ou "SUPORTE"
+    String getTipo();
 
     int getCustoEnergia();
 
