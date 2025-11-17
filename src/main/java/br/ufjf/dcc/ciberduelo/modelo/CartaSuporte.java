@@ -3,9 +3,9 @@ package br.ufjf.dcc.ciberduelo.modelo;
 public class CartaSuporte implements Carta {
         private String nome;
         private String tipo;
-        private double efeito;
+        private double efeito; // porcentagem, exemplo: 0.20 (20%)
         private int custoEnergia;
-        private String tipoEfeito;
+        private String tipoEfeito; // aumenta ataque, diminui ataque e aumenta vida
         private String descricao;
 
         public CartaSuporte(String nome, double efeito, int custoEnergia, String tipoEfeito, String descricao) {
