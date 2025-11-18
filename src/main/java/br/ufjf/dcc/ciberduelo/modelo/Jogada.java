@@ -134,4 +134,62 @@ public class Jogada {
         }
     }
 
+    // Métodos da classe Jogada
+
+    public int getTurno() {
+        return turno;
+    }
+
+    public String getJogadorId() {
+        return jogadorId;
+    }
+
+    public String getAdversarioId() {
+        return adversarioId;
+    }
+
+    public List<Carta> getCartasJogadas() {
+        return cartasJogadas;
+    }
+
+    public boolean passou() {
+        return passou;
+    }
+
+    public boolean desistiu() {
+        return desistiu;
+    }
+
+    public int getVidaAntesJogador() {
+        return vidaAntesJogador;
+    }
+
+    public int getVidaDepoisJogador() {
+        return vidaDepoisJogador;
+    }
+
+    public int getEnergiaAntesJogador() {
+        return energiaAntesJogador;
+    }
+
+    public int getEnergiaDepoisJogador() {
+        return energiaDepoisJogador;
+    }
+
+    public int getVidaAntesAdversario() {
+        return vidaAntesAdversario;
+    }
+
+    public int getVidaDepoisAdversario() {
+        return vidaDepoisAdversario;
+    }
+
+    public int getEnergiaAntesAdversario() {
+        return energiaAntesAdversario;
+    }
+
+    public int getEnergiaDepoisAdversario() {
+        return energiaDepoisAdversario;
+    }
+
 }
