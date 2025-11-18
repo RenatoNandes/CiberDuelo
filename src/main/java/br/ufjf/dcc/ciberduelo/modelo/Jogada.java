@@ -19,4 +19,22 @@ public class Jogada {
     private final int energiaAntesAdversario;
     private final int energiaDepoisAdversario;
 
+    private Jogada(Builder builder) { // Construtor privado para encapsular e somente o Builder conseguir chamar e alterar
+
+        this.turno = builder.turno;
+        this.jogadorId = builder.jogadorId;
+        this.adversarioId = builder.adversarioId;
+        this.cartasJogadas = builder.cartasJogadas;
+        this.passou = builder.passou;
+        this.desistiu = builder.desistiu;
+        this.vidaAntesJogador = builder.vidaAntesJogador;
+        this.vidaDepoisJogador = builder.vidaDepoisJogador;
+        this.energiaAntesJogador = builder.energiaAntesJogador;
+        this.energiaDepoisJogador = builder.energiaDepoisJogador;
+        this.vidaAntesAdversario = builder.vidaAntesAdversario;
+        this.vidaDepoisAdversario = builder.vidaDepoisAdversario;
+        this.energiaAntesAdversario = builder.energiaAntesAdversario;
+        this.energiaDepoisAdversario = builder.energiaDepoisAdversario;
+    }
+
 }
