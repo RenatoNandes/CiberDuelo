@@ -192,4 +192,34 @@ public class Jogada {
         return energiaDepoisAdversario;
     }
 
+    // Método toString para montar a impressão final e preparar pro Replay
+
+    @Override
+    public String toString() {
+        StringBuilder sb = new StringBuilder();
+        sb.append("===== Turno ").append(turno).append(" =====\n");
+        sb.append("Jogador(a): ").append(jogadorId).append("\n");
+        sb.append("Cartas Jogadas ").append("( ").append(jogadorId).append(" ): \n");
+        if (cartasJogadas == null || cartasJogadas.isEmpty()) {
+            sb.append(" - Nenhuma (passou)\n");
+        } else {
+            for (Carta carta : cartasJogadas) {
+                sb.append(" - ")
+                        .append(carta.getNome())
+                        .append(" (")
+                        .append(carta.getTipo())
+                        .append(")\n");
+            }
+        }
+        sb.append("\nPassou? ").append(passou? "Sim" : "Não").append("\n");
+        sb.append("\nDesistiu? ").append(desistiu? "Sim" : "Não").append("\n\n");
+        sb.append("Vida ").append(jogadorId).append(": ").append(vidaAntesJogador).append(" -> ").append(vidaDepoisJogador).append("\n");
+        sb.append("Energia ").append(jogadorId).append(": ").append(energiaAntesJogador).append(" -> ").append(energiaDepoisJogador).append("\n");
+
+        sb.append("Adversário(a): ").append(adversarioId).append("\n");
+        sb.append("Vida ").append(adversarioId).append(": ").append(vidaAntesAdversario).append(" -> ").append(vidaDepoisAdversario).append("\n");
+        sb.append("Energia ").append(adversarioId).append(": ").append(energiaAntesAdversario).append(" -> ").append(energiaDepoisAdversario).append("\n");
+        sb.append("=============================\n");
+        return sb.toString();
+    }
 }
