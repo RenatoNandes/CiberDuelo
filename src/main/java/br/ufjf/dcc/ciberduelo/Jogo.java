@@ -13,7 +13,7 @@ import java.util.List;
 public class Jogo{
     private static void exibirBoasVindas() {
         System.out.println("===========================================");
-        System.out.println("        CIBERDUELO: BATALHA DE HACKERS     ");
+        System.out.println("       CIBERDUELO: BATALHA DE HACKERS     ");
         System.out.println("===========================================");
         System.out.println();
     }

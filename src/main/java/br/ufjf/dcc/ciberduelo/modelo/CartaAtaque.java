@@ -2,11 +2,11 @@ package br.ufjf.dcc.ciberduelo.modelo;
 
 public class CartaAtaque implements Carta {
 
-    private String nome;
-    private String tipo;
-    private int poderAtaque;
-    private int custoEnergia;
-    private String descricao;
+    private final String nome;
+    private final String tipo;
+    private final int poderAtaque;
+    private final int custoEnergia;
+    private final String descricao;
 
     public CartaAtaque(String nome, int poderAtaque, int custoEnergia, String descricao) {
         this.nome = nome;
