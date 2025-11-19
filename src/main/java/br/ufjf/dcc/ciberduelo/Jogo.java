@@ -18,6 +18,22 @@ public class Jogo{
         System.out.println();
     }
 
+    public void menuInicial(){
+
+    }
+
+    public void configuraJogadorEDeck(){
+
+    }
+
+    private void loopPartida(){
+
+    }
+
+    public void encerrarPartida(){
+
+    }
+
     private static void exibirResumoCartas(List<CartaAtaque> ataques,
                                            List<CartaDefesa> defesas,
                                            List<CartaSuporte> suportes) {
