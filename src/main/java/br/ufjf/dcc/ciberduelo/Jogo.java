@@ -3,7 +3,7 @@ package br.ufjf.dcc.ciberduelo;
 import br.ufjf.dcc.ciberduelo.modelo.CartaAtaque;
 import br.ufjf.dcc.ciberduelo.modelo.CartaDefesa;
 import br.ufjf.dcc.ciberduelo.modelo.CartaSuporte;
-
+import java.util.Scanner;
 import java.io.BufferedReader;
 import java.io.FileReader;
 import java.io.IOException;
@@ -19,6 +19,15 @@ public class Jogo{
     }
 
     public void menuInicial(){
+        Scanner scanner = new Scanner(System.in);
+        int opcao = -1;  // valor inválido inicial para entrar no loop
+
+        while (true) {
+            System.out.println("===== MENU INICIAL =====");
+            System.out.println("1 - Iniciar partida");
+            System.out.println("0 - Sair");
+            System.out.print("Escolha uma opção: ");
+        }
 
     }
 
