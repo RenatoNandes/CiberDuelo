@@ -54,6 +54,11 @@ public class Jogo{
     }
 
     public void configuraJogadorEDeck(){
+        Scanner scanner = new Scanner(System.in);
+        System.out.print("Digite o nome do jogador: ");
+        scanner.nextLine();
+        String nomeJogador = scanner.nextLine();
+        this.jogador = new Hacker(nomeJogador, "P1");
 
     }
 
