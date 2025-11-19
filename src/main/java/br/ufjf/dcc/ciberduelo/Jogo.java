@@ -70,6 +70,13 @@ public class Jogo{
         deckJogador.addAll(selecionarAleatorio(cartasSuporte, 2));
         jogador.setDeckInicial(deckJogador);
 
+        // Monta deck do bot
+        List<Carta> deckBot = new ArrayList<>();
+        deckBot.addAll(selecionarAleatorio(cartasAtaque, 4));
+        deckBot.addAll(selecionarAleatorio(cartasDefesa, 4));
+        deckBot.addAll(selecionarAleatorio(cartasSuporte, 2));
+        bot.setDeckInicial(deckBot);
+
 
     }
 
