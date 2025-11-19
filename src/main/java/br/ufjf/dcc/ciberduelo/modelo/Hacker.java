@@ -1,35 +1,64 @@
 package br.ufjf.dcc.ciberduelo.modelo;
+
 import java.util.ArrayList;
 import java.util.List;
 
 public class Hacker {
-    private String nome;
-    private String identificador;
+    private final String nome;
+    private final String identificador;
     private int vida;
     private int energia;
     private List<Carta> deckInicial;
     private List<Carta> deckAtual;
 
-    public Hacker(String nome, String identificador, List<Carta> deckInicial) {
+    public Hacker(String nome, String identificador) {
         this.nome = nome;
         this.identificador = identificador;
         this.vida = 100; // vida inicial
         this.energia = 10; // energia inicial
 
         // guarda uma cópia do deck inicial e cria o deck atual
-        this.deckInicial = new ArrayList<>(deckInicial);
-        this.deckAtual = new ArrayList<>(deckInicial);
+        this.deckInicial = new ArrayList<>();
+        this.deckAtual = new ArrayList<>();
     }
 
-    public String getNome() { return nome; }
-    public String getIdentificador() { return identificador; }
-    public int getVida() { return vida; }
-    public int getEnergia() { return energia; }
-    public List<Carta> getDeckAtual() { return deckAtual; }
+    public String getNome() {
+        return nome;
+    }
+
+    public String getIdentificador() {
+        return identificador;
+    }
+
+    public int getVida() {
+        return vida;
+    }
+
+    public int getEnergia() {
+        return energia;
+    }
+
+    public List<Carta> getDeckAtual() {
+        return deckAtual;
+    }
+
+    public void setVida(int vida) {
+        this.vida = Math.max(0, Math.min(vida, 100));
+    }
+
+    public void setEnergia(int energia) {
+        this.energia = Math.max(0, Math.min(energia, 10));
+    }
+
+    public void setDeckInicial(List<Carta> deck) {
+        this.deckInicial = new ArrayList<>(deck);
+        this.deckAtual = new ArrayList<>(deck);
+    }
 
     public boolean estaVivo() {
         return vida > 0;
     }
+
     public void receberDano(int dano) {
         if (dano <= 0) {
             return; // se o dano for negativo ou zero, não muda nada

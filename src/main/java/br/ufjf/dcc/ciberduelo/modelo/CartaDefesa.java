@@ -1,11 +1,12 @@
 package br.ufjf.dcc.ciberduelo.modelo;
 
-public class CartaDefesa implements Carta{
-    private String nome;
-    private String tipo;
-    private int poderDefesa;
-    private int custoEnergia;
-    private String descricao;
+public class CartaDefesa implements Carta {
+
+    private final String nome;
+    private final String tipo;
+    private final int poderDefesa;
+    private final int custoEnergia;
+    private final String descricao;
 
     public CartaDefesa(String nome, int poderDefesa, int custoEnergia, String descricao) {
         this.nome = nome;
@@ -20,14 +21,22 @@ public class CartaDefesa implements Carta{
     }
 
     @Override
-    public String getNome() { return nome; }
+    public String getNome() {
+        return nome;
+    }
 
     @Override
-    public String getTipo() { return tipo; }
+    public String getTipo() {
+        return tipo;
+    }
 
     @Override
-    public int getCustoEnergia() { return custoEnergia; }
+    public int getCustoEnergia() {
+        return custoEnergia;
+    }
 
     @Override
-    public String getDescricao() { return descricao; }
+    public String getDescricao() {
+        return descricao;
+    }
 }
