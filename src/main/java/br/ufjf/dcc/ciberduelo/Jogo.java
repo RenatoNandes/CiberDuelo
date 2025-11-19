@@ -58,7 +58,11 @@ public class Jogo{
         System.out.print("Digite o nome do jogador: ");
         scanner.nextLine();
         String nomeJogador = scanner.nextLine();
-        this.jogador = new Hacker(nomeJogador, "P1");
+
+        this.jogador = new Hacker(nomeJogador, "P1"); // cria o jogador
+
+        this.bot = new Hacker("BOT-9000", "CPU"); // cria o bot
+
 
     }
 
