@@ -3,6 +3,8 @@ package br.ufjf.dcc.ciberduelo;
 import br.ufjf.dcc.ciberduelo.modelo.CartaAtaque;
 import br.ufjf.dcc.ciberduelo.modelo.CartaDefesa;
 import br.ufjf.dcc.ciberduelo.modelo.CartaSuporte;
+import br.ufjf.dcc.ciberduelo.modelo.Jogada;
+import br.ufjf.dcc.ciberduelo.modelo.Hacker;
 import java.util.Scanner;
 import java.io.BufferedReader;
 import java.io.FileReader;
@@ -11,6 +13,16 @@ import java.util.ArrayList;
 import java.util.List;
 
 public class Jogo{
+
+    private Hacker jogador1;
+    private Hacker jogador2;
+    private List<CartaAtaque> cartasAtaque;
+    private List<CartaDefesa> cartasDefesa;
+    private List<CartaSuporte> cartasSuporte;
+
+    private static final String BOT_NAME = "BOT";
+    private static final String BOT_ID = "202565001";
+
     private static void exibirBoasVindas() {
         System.out.println("===========================================");
         System.out.println("       CIBERDUELO: BATALHA DE HACKERS     ");
