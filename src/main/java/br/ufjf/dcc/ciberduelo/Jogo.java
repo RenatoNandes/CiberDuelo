@@ -27,6 +27,28 @@ public class Jogo{
             System.out.println("1 - Iniciar partida");
             System.out.println("0 - Sair");
             System.out.print("Escolha uma opção: ");
+
+            // verifica se o usuário realmente digitou um número
+            if (!scanner.hasNextInt()) {
+                System.out.println("Entrada inválida! Digite um número.");
+                scanner.nextLine(); // limpa entrada
+                continue; // volta para o início do while
+            }
+
+            opcao = scanner.nextInt();
+
+            if (opcao == 1) {
+                configuraJogadorEDeck();
+                loopPartida();
+                break; // sai do menu após iniciar o jogo
+            }
+            else if (opcao == 0) {
+                System.out.println("Saindo...");
+                System.exit(0);
+            }
+            else {
+                System.out.println("Opção inválida! Tente novamente.");
+            }
         }
 
     }
