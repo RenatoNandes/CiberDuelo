@@ -61,7 +61,7 @@ public class Jogo{
 
         this.jogador = new Hacker(nomeJogador, "P1"); // cria o jogador
 
-        this.bot = new Hacker("BOT", "CPU"); // cria o bot
+        this.bot = new Hacker("BOT-J.A.O", "CPU"); // cria o bot
 
         // Monta deck do jogador (aleatório por enquanto)
         List<Carta> deckJogador = new ArrayList<>();
@@ -76,6 +76,10 @@ public class Jogo{
         deckBot.addAll(selecionarAleatorio(cartasDefesa, 4));
         deckBot.addAll(selecionarAleatorio(cartasSuporte, 2));
         bot.setDeckInicial(deckBot);
+
+        System.out.println("\nDecks montados com sucesso!");
+        System.out.println("Jogador: " + jogador.getNome());
+        System.out.println("Bot: " + bot.getNome());
 
 
     }
