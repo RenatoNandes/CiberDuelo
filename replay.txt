@@ -1,0 +1,472 @@
+==================== REPLAY DA PARTIDA ====================
+
+SELEÇÃO DE CARTAS INICIAIS
+
+Hacker: Renato (ID: 202476043)
+
+Deck inicial: 
+- Trojinho
+- Trojan Persistente
+- Phishing Direcionado
+- ManInTheMiddle Avancado
+- Restauro de Versão
+- Quarentena de Arquivo
+- Firewall Hiperescala
+- Isolamento de Usuário
+- Reset Estratégico
+- Carga Massiva
+
+Hacker: Dahbar (ID: Teste)
+
+Deck inicial: 
+- Tentativa de Login
+- Exploit Zero-Day
+- Packet Sniffer
+- Overflow Direcionado
+- Barreira de Contenção
+- Servidor Espelho de Redundância
+- Proteção de Senhas
+- Firewall Hiperescala
+- Restauração Completa
+- IA Estratégica
+
+==================== TURNOS ====================
+
+--------------- TURNO 1 ---------------
+
+Hacker: Renato
+ID: 202476043
+Vida: 40
+Energia: 2
+Passou? não
+Desistiu? não
+Cartas jogadas:
+- Carga Massiva
+- ManInTheMiddle Avancado
+- Trojan Persistente
+
+-----------------------------------------------
+
+Hacker: Dahbar
+ID: Teste
+Vida: 10
+Energia: 4
+Passou? não
+Desistiu? não
+Cartas jogadas:
+- IA Estratégica
+- Exploit Zero-Day
+
+-----------------------------------------------
+
+--------------- TURNO 2 ---------------
+
+Hacker: Renato
+ID: 202476043
+Vida: 40
+Energia: 2
+Passou? não
+Desistiu? não
+Cartas jogadas:
+- Trojinho
+
+-----------------------------------------------
+
+Hacker: Dahbar
+ID: Teste
+Vida: 10
+Energia: 3
+Passou? não
+Desistiu? não
+Cartas jogadas:
+- Proteção de Senhas
+
+-----------------------------------------------
+
+--------------- TURNO 3 ---------------
+
+Hacker: Renato
+ID: 202476043
+Vida: 40
+Energia: 1
+Passou? não
+Desistiu? não
+Cartas jogadas:
+- Isolamento de Usuário
+
+-----------------------------------------------
+
+Hacker: Dahbar
+ID: Teste
+Vida: 10
+Energia: 3
+Passou? não
+Desistiu? não
+Cartas jogadas:
+- Tentativa de Login
+
+-----------------------------------------------
+
+--------------- TURNO 4 ---------------
+
+Hacker: Renato
+ID: 202476043
+Vida: 40
+Energia: 1
+Passou? não
+Desistiu? não
+Cartas jogadas:
+- Quarentena de Arquivo
+
+-----------------------------------------------
+
+Hacker: Dahbar
+ID: Teste
+Vida: 40
+Energia: 1
+Passou? não
+Desistiu? não
+Cartas jogadas:
+- Restauração Completa
+
+-----------------------------------------------
+
+--------------- TURNO 5 ---------------
+
+Hacker: Renato
+ID: 202476043
+Vida: 40
+Energia: 2
+Passou? sim
+Desistiu? não
+Cartas jogadas:
+(Nenhuma)
+
+-----------------------------------------------
+
+Hacker: Dahbar
+ID: Teste
+Vida: 40
+Energia: 2
+Passou? sim
+Desistiu? não
+Cartas jogadas:
+(Nenhuma)
+
+-----------------------------------------------
+
+--------------- TURNO 6 ---------------
+
+Hacker: Renato
+ID: 202476043
+Vida: 40
+Energia: 1
+Passou? não
+Desistiu? não
+Cartas jogadas:
+- Restauro de Versão
+
+-----------------------------------------------
+
+Hacker: Dahbar
+ID: Teste
+Vida: 40
+Energia: 2
+Passou? não
+Desistiu? não
+Cartas jogadas:
+- Packet Sniffer
+
+-----------------------------------------------
+
+--------------- TURNO 7 ---------------
+
+Hacker: Renato
+ID: 202476043
+Vida: 40
+Energia: 2
+Passou? sim
+Desistiu? não
+Cartas jogadas:
+(Nenhuma)
+
+-----------------------------------------------
+
+Hacker: Dahbar
+ID: Teste
+Vida: 40
+Energia: 3
+Passou? sim
+Desistiu? não
+Cartas jogadas:
+(Nenhuma)
+
+-----------------------------------------------
+
+--------------- TURNO 8 ---------------
+
+Hacker: Renato
+ID: 202476043
+Vida: 60
+Energia: 1
+Passou? não
+Desistiu? não
+Cartas jogadas:
+- Reset Estratégico
+
+-----------------------------------------------
+
+Hacker: Dahbar
+ID: Teste
+Vida: 40
+Energia: 4
+Passou? sim
+Desistiu? não
+Cartas jogadas:
+(Nenhuma)
+
+-----------------------------------------------
+
+--------------- TURNO 9 ---------------
+
+Hacker: Renato
+ID: 202476043
+Vida: 20
+Energia: 2
+Passou? sim
+Desistiu? não
+Cartas jogadas:
+(Nenhuma)
+
+-----------------------------------------------
+
+Hacker: Dahbar
+ID: Teste
+Vida: 40
+Energia: 1
+Passou? não
+Desistiu? não
+Cartas jogadas:
+- Overflow Direcionado
+
+-----------------------------------------------
+
+--------------- TURNO 10 ---------------
+
+Hacker: Renato
+ID: 202476043
+Vida: 20
+Energia: 1
+Passou? não
+Desistiu? não
+Cartas jogadas:
+- Phishing Direcionado
+
+-----------------------------------------------
+
+Hacker: Dahbar
+ID: Teste
+Vida: 20
+Energia: 2
+Passou? sim
+Desistiu? não
+Cartas jogadas:
+(Nenhuma)
+
+-----------------------------------------------
+
+--------------- TURNO 11 ---------------
+
+Hacker: Renato
+ID: 202476043
+Vida: 20
+Energia: 2
+Passou? sim
+Desistiu? não
+Cartas jogadas:
+(Nenhuma)
+
+-----------------------------------------------
+
+Hacker: Dahbar
+ID: Teste
+Vida: 20
+Energia: 3
+Passou? sim
+Desistiu? não
+Cartas jogadas:
+(Nenhuma)
+
+-----------------------------------------------
+
+--------------- TURNO 12 ---------------
+
+Hacker: Renato
+ID: 202476043
+Vida: 20
+Energia: 3
+Passou? sim
+Desistiu? não
+Cartas jogadas:
+(Nenhuma)
+
+-----------------------------------------------
+
+Hacker: Dahbar
+ID: Teste
+Vida: 20
+Energia: 4
+Passou? sim
+Desistiu? não
+Cartas jogadas:
+(Nenhuma)
+
+-----------------------------------------------
+
+--------------- TURNO 13 ---------------
+
+Hacker: Renato
+ID: 202476043
+Vida: 20
+Energia: 4
+Passou? sim
+Desistiu? não
+Cartas jogadas:
+(Nenhuma)
+
+-----------------------------------------------
+
+Hacker: Dahbar
+ID: Teste
+Vida: 20
+Energia: 5
+Passou? sim
+Desistiu? não
+Cartas jogadas:
+(Nenhuma)
+
+-----------------------------------------------
+
+--------------- TURNO 14 ---------------
+
+Hacker: Renato
+ID: 202476043
+Vida: 20
+Energia: 5
+Passou? sim
+Desistiu? não
+Cartas jogadas:
+(Nenhuma)
+
+-----------------------------------------------
+
+Hacker: Dahbar
+ID: Teste
+Vida: 20
+Energia: 6
+Passou? sim
+Desistiu? não
+Cartas jogadas:
+(Nenhuma)
+
+-----------------------------------------------
+
+--------------- TURNO 15 ---------------
+
+Hacker: Renato
+ID: 202476043
+Vida: 20
+Energia: 1
+Passou? não
+Desistiu? não
+Cartas jogadas:
+- Firewall Hiperescala
+
+-----------------------------------------------
+
+Hacker: Dahbar
+ID: Teste
+Vida: 20
+Energia: 2
+Passou? não
+Desistiu? não
+Cartas jogadas:
+- Barreira de Contenção
+
+-----------------------------------------------
+
+--------------- TURNO 16 ---------------
+
+Hacker: Renato
+ID: 202476043
+Vida: 20
+Energia: 1
+Passou? não
+Desistiu? não
+Cartas jogadas:
+- Trojinho
+
+-----------------------------------------------
+
+Hacker: Dahbar
+ID: Teste
+Vida: 10
+Energia: 3
+Passou? sim
+Desistiu? não
+Cartas jogadas:
+(Nenhuma)
+
+-----------------------------------------------
+
+--------------- TURNO 17 ---------------
+
+Hacker: Renato
+ID: 202476043
+Vida: 20
+Energia: 2
+Passou? sim
+Desistiu? não
+Cartas jogadas:
+(Nenhuma)
+
+-----------------------------------------------
+
+Hacker: Dahbar
+ID: Teste
+Vida: 10
+Energia: 4
+Passou? sim
+Desistiu? não
+Cartas jogadas:
+(Nenhuma)
+
+-----------------------------------------------
+
+--------------- TURNO 18 ---------------
+
+Hacker: Renato
+ID: 202476043
+Vida: 20
+Energia: 1
+Passou? não
+Desistiu? não
+Cartas jogadas:
+- Phishing Direcionado
+
+-----------------------------------------------
+
+Hacker: Dahbar
+ID: Teste
+Vida: 0
+Energia: 5
+Passou? sim
+Desistiu? não
+Cartas jogadas:
+(Nenhuma)
+
+-----------------------------------------------
+
+RESULTADO FINAL: 
+Vencedor: Renato
+Perdedor: Dahbar
