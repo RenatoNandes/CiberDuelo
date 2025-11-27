@@ -5,150 +5,46 @@ import java.util.List;
 public class Jogada {
 
     private final int turno;
-    private final String jogadorId;
-    private final String adversarioId;
-    private final List<Carta> cartasJogadas;
+    private final String nomeHacker;
+    private final String idHacker;
+    private final int vida;
+    private final int energia;
+    private final List<String> cartasJogadas;
     private final boolean passou;
     private final boolean desistiu;
-    private final int vidaAntesJogador;
-    private final int vidaDepoisJogador;
-    private final int energiaAntesJogador;
-    private final int energiaDepoisJogador;
-    private final int vidaAntesAdversario;
-    private final int vidaDepoisAdversario;
-    private final int energiaAntesAdversario;
-    private final int energiaDepoisAdversario;
 
-    private Jogada(Builder builder) { // Construtor privado para encapsular e somente o Builder conseguir chamar e alterar
-
-        this.turno = builder.turno;
-        this.jogadorId = builder.jogadorId;
-        this.adversarioId = builder.adversarioId;
-        this.cartasJogadas = builder.cartasJogadas;
-        this.passou = builder.passou;
-        this.desistiu = builder.desistiu;
-        this.vidaAntesJogador = builder.vidaAntesJogador;
-        this.vidaDepoisJogador = builder.vidaDepoisJogador;
-        this.energiaAntesJogador = builder.energiaAntesJogador;
-        this.energiaDepoisJogador = builder.energiaDepoisJogador;
-        this.vidaAntesAdversario = builder.vidaAntesAdversario;
-        this.vidaDepoisAdversario = builder.vidaDepoisAdversario;
-        this.energiaAntesAdversario = builder.energiaAntesAdversario;
-        this.energiaDepoisAdversario = builder.energiaDepoisAdversario;
+    public Jogada(int turno, String nomeHacker, String idHacker, int vida, int energia, List<String> cartasJogadas, boolean passou, boolean desistiu) {
+        this.turno = turno;
+        this.nomeHacker = nomeHacker;
+        this.idHacker = idHacker;
+        this.vida = vida;
+        this.energia = energia;
+        this.cartasJogadas = cartasJogadas;
+        this.passou = passou;
+        this.desistiu = desistiu;
     }
-
-    public static class Builder { // Classe Builder para montar a jogada passo a passo
-
-        private int turno;
-        private String jogadorId;
-        private String adversarioId;
-        private List<Carta> cartasJogadas;
-        private boolean passou;
-        private boolean desistiu;
-        private int vidaAntesJogador;
-        private int vidaDepoisJogador;
-        private int energiaAntesJogador;
-        private int energiaDepoisJogador;
-        private int vidaAntesAdversario;
-        private int vidaDepoisAdversario;
-        private int energiaAntesAdversario;
-        private int energiaDepoisAdversario;
-
-        // Métodos da classe Builder
-
-        public Builder() {
-        }
-
-        public Builder turno(int turno) {
-            this.turno = turno;
-            return this;
-        }
-
-        public Builder jogadorId(String jogadorId) {
-            this.jogadorId = jogadorId;
-            return this;
-        }
-
-        public Builder adversarioId(String adversarioId) {
-            this.adversarioId = adversarioId;
-            return this;
-        }
-
-        public Builder cartasJogadas(List<Carta> cartasJogadas) {
-            this.cartasJogadas = cartasJogadas;
-            return this;
-        }
-
-        public Builder passou(boolean passou) {
-            this.passou = passou;
-            return this;
-        }
-
-        public Builder desistiu(boolean desistiu) {
-            this.desistiu = desistiu;
-            return this;
-        }
-
-        public Builder vidaAntesJogador(int vida) {
-            this.vidaAntesJogador = vida;
-            return this;
-        }
-
-        public Builder vidaDepoisJogador(int vida) {
-            this.vidaDepoisJogador = vida;
-            return this;
-        }
-
-        public Builder energiaAntesJogador(int energia) {
-            this.energiaAntesJogador = energia;
-            return this;
-        }
-
-        public Builder energiaDepoisJogador(int energia) {
-            this.energiaDepoisJogador = energia;
-            return this;
-        }
-
-        public Builder vidaAntesAdversario(int vida) {
-            this.vidaAntesAdversario = vida;
-            return this;
-        }
-
-        public Builder vidaDepoisAdversario(int vida) {
-            this.vidaDepoisAdversario = vida;
-            return this;
-        }
-
-        public Builder energiaAntesAdversario(int energia) {
-            this.energiaAntesAdversario = energia;
-            return this;
-        }
-
-        public Builder energiaDepoisAdversario(int energia) {
-            this.energiaDepoisAdversario = energia;
-            return this;
-        }
-
-        public Jogada build() {
-            return new Jogada(this);
-        }
-    }
-
-    // Métodos da classe Jogada
 
     public int getTurno() {
         return turno;
     }
 
-    public String getJogadorId() {
-        return jogadorId;
+    public String getNomeHacker() {
+        return nomeHacker;
     }
 
-    public String getAdversarioId() {
-        return adversarioId;
+    public String getIdHacker() {
+        return idHacker;
     }
 
-    public List<Carta> getCartasJogadas() {
+    public int getVida() {
+        return vida;
+    }
+
+    public int getEnergia() {
+        return energia;
+    }
+
+    public List<String> getCartasJogadas() {
         return cartasJogadas;
     }
 
@@ -158,68 +54,5 @@ public class Jogada {
 
     public boolean desistiu() {
         return desistiu;
-    }
-
-    public int getVidaAntesJogador() {
-        return vidaAntesJogador;
-    }
-
-    public int getVidaDepoisJogador() {
-        return vidaDepoisJogador;
-    }
-
-    public int getEnergiaAntesJogador() {
-        return energiaAntesJogador;
-    }
-
-    public int getEnergiaDepoisJogador() {
-        return energiaDepoisJogador;
-    }
-
-    public int getVidaAntesAdversario() {
-        return vidaAntesAdversario;
-    }
-
-    public int getVidaDepoisAdversario() {
-        return vidaDepoisAdversario;
-    }
-
-    public int getEnergiaAntesAdversario() {
-        return energiaAntesAdversario;
-    }
-
-    public int getEnergiaDepoisAdversario() {
-        return energiaDepoisAdversario;
-    }
-
-    // Método toString para montar a impressão final e preparar pro Replay
-
-    @Override
-    public String toString() {
-        StringBuilder sb = new StringBuilder();
-        sb.append("===== Turno ").append(turno).append(" =====\n");
-        sb.append("Jogador(a): ").append(jogadorId).append("\n");
-        sb.append("Cartas Jogadas ").append("( ").append(jogadorId).append(" ): \n");
-        if (cartasJogadas == null || cartasJogadas.isEmpty()) {
-            sb.append(" - Nenhuma (passou)\n");
-        } else {
-            for (Carta carta : cartasJogadas) {
-                sb.append(" - ")
-                        .append(carta.getNome())
-                        .append(" (")
-                        .append(carta.getTipo())
-                        .append(")\n");
-            }
-        }
-        sb.append("\nPassou? ").append(passou? "Sim" : "Não").append("\n");
-        sb.append("\nDesistiu? ").append(desistiu? "Sim" : "Não").append("\n\n");
-        sb.append("Vida ").append(jogadorId).append(": ").append(vidaAntesJogador).append(" -> ").append(vidaDepoisJogador).append("\n");
-        sb.append("Energia ").append(jogadorId).append(": ").append(energiaAntesJogador).append(" -> ").append(energiaDepoisJogador).append("\n");
-
-        sb.append("Adversário(a): ").append(adversarioId).append("\n");
-        sb.append("Vida ").append(adversarioId).append(": ").append(vidaAntesAdversario).append(" -> ").append(vidaDepoisAdversario).append("\n");
-        sb.append("Energia ").append(adversarioId).append(": ").append(energiaAntesAdversario).append(" -> ").append(energiaDepoisAdversario).append("\n");
-        sb.append("=============================\n");
-        return sb.toString();
     }
 }
