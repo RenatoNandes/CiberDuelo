@@ -38,6 +38,10 @@ public class Hacker {
         return energia;
     }
 
+    public List<Carta> getDeckInicial() {
+        return deckInicial;
+    }
+
     public List<Carta> getDeckAtual() {
         return deckAtual;
     }
@@ -121,4 +125,3 @@ public class Hacker {
         deckAtual = new ArrayList<>(deckInicial);
     }
 }
-
