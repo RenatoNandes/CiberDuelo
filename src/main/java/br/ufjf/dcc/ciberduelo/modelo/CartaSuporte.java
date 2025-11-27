@@ -18,14 +18,6 @@ public class CartaSuporte implements Carta {
         this.descricao = descricao;
     }
 
-    public double getEfeito() {
-        return efeito;
-    }
-
-    public String getTipoEfeito() {
-        return tipoEfeito;
-    }
-
     @Override
     public String getNome() {
         return nome;
@@ -36,9 +28,17 @@ public class CartaSuporte implements Carta {
         return tipo;
     }
 
+    public double getEfeito() {
+        return efeito;
+    }
+
     @Override
     public int getCustoEnergia() {
         return custoEnergia;
+    }
+
+    public String getTipoEfeito() {
+        return tipoEfeito;
     }
 
     @Override

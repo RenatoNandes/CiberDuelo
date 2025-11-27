@@ -16,10 +16,6 @@ public class CartaDefesa implements Carta {
         this.descricao = descricao;
     }
 
-    public int getPoderDefesa() {
-        return poderDefesa;
-    }
-
     @Override
     public String getNome() {
         return nome;
@@ -28,6 +24,10 @@ public class CartaDefesa implements Carta {
     @Override
     public String getTipo() {
         return tipo;
+    }
+
+    public int getPoderDefesa() {
+        return poderDefesa;
     }
 
     @Override
